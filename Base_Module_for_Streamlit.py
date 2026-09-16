@@ -63,7 +63,6 @@ pprint(dict_park_IDs_and_names)
 #str_park_IDs_for_API = ",".join(park_IDs)
 #detailed_link = base_link + "Detay?id=" + str_park_IDs_for_API
 
-pprint(detailed_link)
 #park_names = [i for i in dict_park_IDs_and_names.keys]
 carpark = st.selectbox(label="Otopark Seçiniz", options=list(dict_park_IDs_and_names.keys()))
 
@@ -75,7 +74,7 @@ df_detailed_park_data = get_raw_data_IMM_api.detailed_load_from_API(detailed_lin
 
 #st.write(park_ID)
 
-st.dataframe(df_detailed_park_data)
+#st.dataframe(df_detailed_park_data)
 
 capacity = df_detailed_park_data["capacity"][0].item()
 empty_capacity = df_detailed_park_data["emptyCapacity"][0].item()
