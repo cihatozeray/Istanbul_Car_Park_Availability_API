@@ -1,4 +1,4 @@
-Istanbul_Car_Park_Availability_API
+# Istanbul_Car_Park_Availability_API
 
 A data visualization study using Python to show live availability of car parks in Istanbul. IMM Open Data Portal is the data source.
 
@@ -8,4 +8,7 @@ License of Data Source: https://data.ibb.gov.tr/en/license
 
 Streamlit library of Python is used for user interface creation
 
-<img width="600" height="700" alt="image" src="https://github.com/user-attachments/assets/414332ab-8211-4986-9a2e-154e79c324ce" />
+
+
+<img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/99b76878-362a-454b-9bd9-91ae667cb5f6" />
+
