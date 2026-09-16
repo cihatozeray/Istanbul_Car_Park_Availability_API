@@ -8,4 +8,4 @@ License of Data Source: https://data.ibb.gov.tr/en/license
 
 Streamlit library of Python is used for user interface creation
 
-<img width="300" height="700" alt="image" src="https://github.com/user-attachments/assets/414332ab-8211-4986-9a2e-154e79c324ce" />
+<img width="600" height="700" alt="image" src="https://github.com/user-attachments/assets/414332ab-8211-4986-9a2e-154e79c324ce" />
