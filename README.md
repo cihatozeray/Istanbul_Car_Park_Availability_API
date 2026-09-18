@@ -6,7 +6,7 @@ Data Source: https://data.ibb.gov.tr/en/dataset/ispark-otopark-detay-bilgileri-w
 
 License of Data Source: https://data.ibb.gov.tr/en/license
 
-Streamlit library of Python is used for user interface creation
+Streamlit library of Python is used for user interface
 
 
 
