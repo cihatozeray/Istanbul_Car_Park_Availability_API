@@ -93,7 +93,7 @@ ax.pie(pie_chart_sizes,
         colors=colors,
         counterclock=False)
 
-st.pyplot(fig)
+#st.pyplot(fig)
 
 str_update_date = df_detailed_park_data["updateDate"][0]
 
@@ -101,8 +101,44 @@ update_date_api = datetime.strptime(str_update_date, "%d.%m.%Y %H:%M:%S")
 now_time = datetime.now()
 time_difference = now_time - update_date_api
 
-st.write(update_date_api)
-st.write(time_difference)
+#st.write(update_date_api)
+#st.write(time_difference)
+
+def timedelta_to_fractions(timediff):
+    timer_in_sec = timediff.total_seconds()
+    days = timer_in_sec//86400
+    hours = timer_in_sec//3600
+    mins = (timer_in_sec//60)%60
+    seconds = timer_in_sec%60
+
+    return [int(days), int(hours), int(mins), int(seconds)]
+
+time_diff_fractions = timedelta_to_fractions(time_difference)
+time_diff_fractions_str = [str(i) for i in time_diff_fractions]
+time_labels = ["gün", "saat", "dakika", "saniye"]
+
+def time_diff_line_maker(time_diff_fractions_str, time_labels):
+    time_board = "" 
+    for i in range(4): 
+        if time_diff_fractions[i] != 0:
+            time_board = time_board + time_diff_fractions_str[i] + " " + time_labels[i] + ", " 
+
+    time_board = time_board[:-2] + " öncesi:"
+
+    if time_diff_fractions == [0,0,0,0]:
+        time_board = "Güncel:"
+        
+    return time_board
+
+time_diff_line_str = time_diff_line_maker(time_diff_fractions_str, time_labels)
+
+
+st.write(time_diff_line_str)
+st.pyplot(fig)
+
+#
+
+
 
 
 
